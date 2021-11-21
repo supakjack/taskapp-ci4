@@ -15,12 +15,11 @@ Tasks
     </ul>
 <?php endif ?>
 
-<?= form_open('/tasks/create') ?>
+<?= form_open('/tasks/update/' . $task->id) ?>
     <?= $this->include('Tasks/form') ?>
 
-
 <button>Save</button>
-<a href="<?= site_url('tasks') ?>">Cancel</a>
+<a href="<?= site_url('tasks/show/' . $task->id) ?>">Cancel</a>
 </form>
 
 <?= $this->endSection() ?>
