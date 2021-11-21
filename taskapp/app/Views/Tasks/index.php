@@ -10,7 +10,7 @@ Tasks
     <?php foreach ($tasks as $task) : ?>
         <li>
             <a href="<?= site_url('tasks/show/' . $task['id']) ?>">
-                <?= $task['description'] ?>
+                <?= esc($task['description']) ?>
             </a>
         </li>
     <?php endforeach; ?>

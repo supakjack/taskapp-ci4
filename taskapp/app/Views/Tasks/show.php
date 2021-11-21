@@ -12,7 +12,7 @@ Tasks
     <dd><?= $task['id'] ?></dd>
 
     <dt>Description</dt>
-    <dd> <?= $task['description'] ?></dd>
+    <dd> <?= esc($task['description']) ?></dd>
 
     <dt>created_at</dt>
     <dd> <?= $task['created_at'] ?></dd>
