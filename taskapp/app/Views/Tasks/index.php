@@ -8,7 +8,11 @@ Tasks
 <h1>Tasks</h1>
 <ul>
     <?php foreach ($tasks as $task) : ?>
-        <li><?= $task['id'] ?> <?= $task['description'] ?></li>
+        <li>
+            <a href="<?= site_url('tasks/show/' . $task['id']) ?>">
+                <?= $task['description'] ?>
+            </a>
+        </li>
     <?php endforeach; ?>
 </ul>
 <?= $this->endSection() ?>
